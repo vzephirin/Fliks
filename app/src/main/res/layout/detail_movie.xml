@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:background="@color/colorGray"
+
+    android:layout_height="match_parent">
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/colorGray"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:layout_marginTop="5dp"
+                android:id="@+id/fgVideoDetailMovie"
+                android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <TextView
+                android:id="@+id/tvTitled"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorWhite"
+                android:paddingTop="5dp"
+                tools:text="Captain America: Civil War"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvDateReleased"
+                android:layout_width="wrap_content"
+                android:paddingBottom="5dp"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorWhite"
+                tools:text="Date release: 2016-04-12 "
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvPopularityd"
+                android:layout_width="wrap_content"
+                android:paddingBottom="5dp"
+                android:textSize="12sp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/colorWhite"
+                tools:text="Popularity: 44.455824 "
+                android:layout_height="wrap_content"/>
+
+            <RatingBar
+                android:id="@+id/ratingBard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:paddingBottom="5dp"
+                android:stepSize="1.0"
+                android:rating="2.0" />
+
+            <TextView
+                android:id="@+id/tvOverviewd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:autoSizeMaxTextSize="20sp"
+                tools:text="Despite his family’s baffling generations-old ban on music, Miguel dreams of becoming an accomplished musician like his idol, Ernesto de la Cruz. Desperate to prove his talent, Miguel finds himself in the stunning and colorful Land of the Dead following a mysterious chain of events. Along the way, he meets charming trickster Hector, and together, they set off on an extraordinary journey to unlock the real story behind Miguel's family history." />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
